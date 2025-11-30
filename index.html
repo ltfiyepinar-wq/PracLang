@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>DilPratiği</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              app: {
+                bg: '#0F172A', // Slate 900
+                card: '#1E293B', // Slate 800
+                primary: '#0070F0', // Vivid Blue
+                accent: '#00D4FF', // Light Blue
+                danger: '#EF4444', // Red 500
+                success: '#10B981', // Emerald 500
+                text: '#F8FAFC', // Slate 50
+                subtext: '#94A3B8', // Slate 400
+              }
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #0F172A;
+        color: #F8FAFC;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom scrollbar for dark theme */
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0F172A;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #334155;
+        border-radius: 3px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #475569;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "PracLang",
+  "description": "Kişiselleştirilmiş dil öğrenme asistanı. Tek bir dil seçin ve hemen konuşmaya başlayın.",
+  "requestFramePermissions": [
+    "microphone",
+    "camera"
+  ]
+}
